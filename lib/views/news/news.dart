@@ -115,7 +115,7 @@ class _NewsState extends State<News> {
                               Padding(
                                 padding: EdgeInsets.only(top: 3.0),
                                 child: Text(
-                                  '“${post['message']['content']}”',
+                                  '${post['message']['content']}',
                                   style: Theme.of(context).textTheme.bodyText2,
                                 ),
                               ),

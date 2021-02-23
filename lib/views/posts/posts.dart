@@ -25,7 +25,7 @@ class _PostsState extends State<Posts> {
   initState() {
     super.initState();
     initializeDateFormatting();
-    initPosts();
+    getPosts();
     // _global.delete('posts');
   }
 
@@ -206,12 +206,8 @@ class _PostsState extends State<Posts> {
 
   Future getPosts() async {
     var data = _global.get('posts', defaultValue: <List>[]);
-    return data;
-  }
-
-  Future initPosts() async {
-    var data = _global.get('posts', defaultValue: <List>[]);
     posts = data;
+    return data;
   }
 
   Future<void> _createPost() async {
